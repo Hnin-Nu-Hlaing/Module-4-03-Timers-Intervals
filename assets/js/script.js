@@ -9,20 +9,18 @@ var words = message.split(' ');
 function countdown() {
   var timeLeft = 5;
 
-  // TODO: Add a comment describing the functionality of the setInterval() method:
   // Set the times of every 1000 milliseconds
   var timeInterval = setInterval(function () {
-    // TODO: Add comments describing the functionality of the `if` statement:
     // If 'timeLeft' is greater than 1, it reduce 1
     if (timeLeft > 1) {
       timerEl.textContent = timeLeft + ' seconds remaining';
       timeLeft--;
-    } // TODO: Add comments describing the functionality of the `else if` statement:
+    } 
     // If 'timeLeft' is equal to 1, change the displaying text
     else if (timeLeft === 1) {
       timerEl.textContent = timeLeft + ' second remaining';
       timeLeft--;
-    } // TODO: Add comments describing the functionality of the `else` statement:
+    }
     // If 'timeLeft' is equal to 0,set 'timeEl' to empty
     else {
       timerEl.textContent = '';
